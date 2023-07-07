@@ -1,4 +1,4 @@
-string = "Hello This is a string"
+string = "Hello this is a string"
 
 puts string.include? "h"
 puts string.upcase
