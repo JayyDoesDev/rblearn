@@ -18,4 +18,16 @@ profile = Profile.new "Jay", "I code stuff"
 puts profile.name
 puts profile.get_description
 
+# Inheritance
+class CreateProfile < Profile
+    attr_reader :name, :description
+    def initialize(name, description)
+        @name = name
+        @description = description
+    end
+        
+end
 
+newProfile = CreateProfile.new "Jay", "I code stuff"
+
+puts newProfile.name
