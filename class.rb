@@ -7,9 +7,15 @@ class Profile
         @name = name
         @description = description
     end
+
+    def get_description
+        return @description
+    end
 end
 
 profile = Profile.new "Jay", "I code stuff"
 
 puts profile.name
+puts profile.get_description
+
 
